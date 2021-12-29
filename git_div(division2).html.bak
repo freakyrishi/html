@@ -1,0 +1,29 @@
+<html>
+<title>AAA</title>
+<h1 align=center> Captain America</h1>
+<hr>
+<hr>
+
+<body>
+<div style="width:25%;float:left;background-color:green;padding:20px:color:white;">
+<p align=center><img src="pexels.jpeg"width=50 height=50></p>
+<h1> USA</h1>
+<P> Best Avenger</p>
+</div>
+<div style="width:25%;float:left;background-color:green;padding:20px:color:white;">
+<p align=center><img src="pexels.jpeg"width=50 height=50></p>
+<h1> USA</h1>
+<P> Best Avenger</p>
+</div>
+<div style="width:25%;float:left;background-color:green;padding:20px:color:white;">
+<p align=center><img src="pexels.jpeg"width=50 height=50></p>
+<h1> USA</h1>
+<P> Best Avenger</p>
+</div>
+<div style="width:25%;float:left;background-color:green;padding:20px:color:white;">
+<p align=center><img src="pexels.jpeg"width=50 height=50></p>
+<h1> USA</h1>
+<P> Best Avenger</p>
+</div>
+</body>
+</html>

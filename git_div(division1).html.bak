@@ -1,0 +1,27 @@
+<html>
+<title>AAA</title>
+<body bgcolor="gray">
+<h1 align=center>Country</h1>
+<hr>
+<hr>
+
+<div style="float:left;width:47%;background-color:Blue;color:White;padding:20px">
+<p align=center><img src="netflixlogo.png" width 60 height 60></p>
+<h2> london</h2>
+<p> Big city in the world </p>
+</div>
+<div style="float:left;width:47%;background-color:lightyellow;color:black;padding:20px">
+<p align=center><img src="netflixlogo.png" width 60 height 60></p>
+<h2>NYC</h2>
+<p> Big city in the world </p>
+</div>
+</body>
+
+
+
+
+
+
+
+
+</html>

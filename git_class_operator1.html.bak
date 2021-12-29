@@ -1,0 +1,16 @@
+<html>
+<title>Company</title>
+<h1 align=center>Compnay</h1>
+<hr>
+<hr>
+<style>
+#symbol{font-color:red;font-size:30px}
+#symbol1{font-color:Green;font-size:50px}
+</style>
+
+<h2 id="symbol">Rohit</h2>
+<h2 id="symbol1">Roshan</h2>
+<h2 id="symbol">Rubina</h2>
+<h2 id="symbol1">Rahul</h2>
+<h2 id="symbol">Ram</h2>
+</html>
