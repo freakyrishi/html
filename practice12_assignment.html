@@ -1,0 +1,40 @@
+<!-- wap to accept radius of a circle and then print area and circ of a circle -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function multi(){
+    let pi;
+    let r;
+    let r1;
+    pi=parseFloat(document.f1.pi.value);
+    r=parseFloat(document.f1.r.value);
+   r1=parseFloat(document.f1.r1.value);
+    area=pi*r*r1;
+    document.getElementById("result").innerHTML=area;
+}
+</script>
+<body>
+    <h1>AAA</h1>
+    <hr><hr>
+    <center>
+        <form name="f1">
+            <fieldset>
+                <legend>Float Addition </legend>
+                pi : <input type="text" name="pi">
+                r : <input type="text" name="r">
+                r1 : <input type="text" name="r1"><br><br>
+                <input type="button" value="multi" onclick="multi()"><br><br>
+                Result : <span id="result"></span>
+            </fieldset>
+
+        </form>
+    </center>
+</body>
+</html>

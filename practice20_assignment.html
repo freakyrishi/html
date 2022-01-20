@@ -1,0 +1,52 @@
+<!-- 7 -wap to accept 3 subject marks and display total, percentage and grade. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abc() {
+        let mark1, mark2, mark3, per, total, grade;
+        mark1 = parseInt(document.f1.m1.value);
+        mark2 = parseInt(document.f1.m2.value);
+        mark3 = parseInt(document.f1.m3.value);
+        total = mark1 + mark2 + mark3;
+        per = (total / 300) * 100;
+        // if (per < 50) {
+        //     grade = Fail;
+        // }
+        // if (per > 60) {
+        //     grade = First Class;
+        // }
+        // if (per > 75) {
+        //     grade = Disctintion;
+        // }
+        document.getElementById("t1").innerHTML=total;
+        document.getElementById("p1").innerHTML=per;
+        // document.getElementById("g1").innerHTML=grade;
+    }
+</script>
+
+<body>
+    <center>
+        <form name="f1" style="width: 50%;">
+            <fieldset>
+                <legend>Marksheet</legend>
+                Mark 1 : <input type="text" name="m1"><br><br>
+                Mark 2 : <input type="text" name="m2"><br><br>
+                Mark 3 : <input type="text" name="m3"><br><br>
+                <input type="button" value="Click" onclick="abc()"><br><br>
+                Total : <span id="t1"></span><br>
+                Percentage : <span id="p1"></span><br>
+                Grade : <span id="g1"></span><br>
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

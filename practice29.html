@@ -1,0 +1,23 @@
+<!-- number accept from user -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function cube(number){
+        // number=document.f1.n1.value;
+    alert(number*number*number);
+    }
+</script>
+<body>
+   <form name="f1">
+       <input type="text" name="n1"><br><br>
+       <input type="button" value="Click" onclick="cube(document.f1.n1.value)">
+   </form>
+</body>
+</html>

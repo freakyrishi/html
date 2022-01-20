@@ -1,0 +1,49 @@
+<!-- find out even number or odd number -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function abc(){
+    var age;
+    
+    age=parseInt(document.f1.n1.value);
+    if(age>1 && age<5)
+    {
+        document.getElementById("age1").innerHTML="he is in 1st standard";
+    }
+    else if(age>8 && age<12)
+      {
+        document.getElementById("age1").innerHTML="student in 5th standard";
+    }
+    else if(age>13 && age<16)
+    {
+        document.getElementById("age1").innerHTML="student 10th pass";
+    }
+    else
+      {
+        document.getElementById("age1").innerHTML="graduate student";
+    }
+    
+}
+</script>
+<body>
+    <h1>AAA</h1>
+    <hr><hr>
+    <center>
+        <form name="f1" style="width: 50%;">
+            <fieldset>
+                <legend>Box</legend>
+                Enter a number : <input type="text" name="n1"><br><br>
+                <input type="button" value="Click" onclick="abc()"><br><br>
+                Result : <span id="age1"></span>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>

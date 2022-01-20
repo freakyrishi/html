@@ -1,0 +1,38 @@
+<!-- Squere Calculator -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function moon() {
+            var num;
+            num = document.f1.n2.value;
+            sq=num*num;
+            document.getElementById("result").innerHTML=sq;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>AAA</h1>
+    <hr>
+    <center>
+        <form name="f1">
+        <fieldset>
+            <legend>Calculations</legend>
+
+            Number <input type="text" name="n2" /><br><br>
+            <input type="button" value="click" onclick="moon();" /><br><br>
+           squere : <span id="result" name="result" ></span>
+
+        </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

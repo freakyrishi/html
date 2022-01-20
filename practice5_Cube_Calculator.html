@@ -1,0 +1,33 @@
+<!-- Cube Calculator -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function multi(){
+    let num;
+    num=document.f1.n1.value;
+     cube=num*num*num;
+    document.getElementById("result").innerHTML=cube;
+}
+</script>
+<body>
+    <h1>AAA</h1>
+    <hr>
+    <center>
+        <form name="f1" style="width: 50%;">
+            <fieldset>
+                <legend>Calculator</legend>
+                    Enter Number = <input type="text" name="n1" >
+                    <input type="button" value="Click" onclick="multi()"><br><br><br>
+                    Result = <span id="result"></span>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>

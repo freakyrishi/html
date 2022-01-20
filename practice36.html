@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abc() {
+        var mesg;
+
+        if (document.f1.n1.value.length > 5) {
+            mesg = "Strength Good";
+        }
+        else {
+            mesg = "Username should be in 6 to 8 charecter";
+        }
+        document.getElementById("i1").innerHTML = mesg;
+    }
+</script>
+
+<body>
+    <center>
+        <form name="f1">
+            <fieldset>
+                <legend>Simple Box</legend>
+                Username : <input type="text" name="n1"><br><br>
+                Password : <input type="password" name="n2"><br><br>
+                <input type="button" value="Click" onclick="abc()"><br><br>
+                Messege : <span id="i1"></span>
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

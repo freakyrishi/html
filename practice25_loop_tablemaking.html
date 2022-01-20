@@ -1,0 +1,51 @@
+<!-- example 3 - wap to accept a number and print table of that number using for loop -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function msg() {
+        var num, result = 1;
+        var r = 0;
+        num = parseInt(document.f1.n1.value);//parseInt function is used to convert string into integer
+        for (i = 1; i <= 10; i++) {
+            result = num * i;
+            if (r == 0) {
+                r = num + " * " + i + " = " + result + "<br>";
+            }
+            else {
+                r += num + " * " + i + " = " + result + "<br>";
+            }
+        }
+
+        document.getElementById("r1").innerHTML = r;
+    }
+
+</script>
+
+<body>
+    <center>
+        <form name="f1" style="width:50%">
+            <fieldset>
+                <legend>Calculations</legend>
+                Enter No <input type=text name="n1" />
+                <br><br>
+
+                <input type=button value="Result" onclick="msg();" />
+                <br><br>
+                Result :
+                <br>
+                <span id="r1"></span>
+            </fieldset>
+        </form>
+    </center>
+
+</body>
+
+</html>

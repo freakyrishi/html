@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abc() {
+        let uname, pass;
+        uname =document.f1.n1.value;
+        pass =document.f1.n2.value;
+        if (uname=="admin" && pass=="admin") {
+            document.getElementById("g1").innerHTML = "Login Successfully";
+        }
+        else{
+            document.getElementById("g1").innerHTML = "Invalid details";
+        }
+    }
+
+</script>
+
+<body>
+    <center>
+        <form name="f1" style="width: 50%;">
+            <fieldset>
+                <legend>Sign In</legend>
+                Username : <input type="text" name="n1"><br><br>
+                Password : <input type="password" name="n2"><br><br>
+                <input type="button" value="signin" onclick="abc()"><br><br>
+                Remark : <span id="g1"></span>
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

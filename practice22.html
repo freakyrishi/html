@@ -1,0 +1,58 @@
+<!-- example to accept dayno and display dayname using switch -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abc() {
+        var day, result;
+        day = parseInt(document.f1.n1.value);
+        switch (day) {
+            case 1:
+                result = "Monday";
+                break;
+            case 2:
+                result = "tuesday";
+                break;
+            case 3:
+                result = "wednesday";
+                break;
+            case 4:
+                result = "thursday";
+                break;
+            case 5:
+                result = "friday";
+                break;
+            case 6:
+                result = "saturday";
+                break;
+            case 7:
+                result = "Sunday";
+                break;
+            
+        }
+        document.getElementById("g1").innerHTML = result;
+    }
+</script>
+
+<body>
+    <center>
+        <form name="f1">
+            <fieldset>
+                <legend>Switch Case</legend>
+                Enter : <input type="text" name="n1">
+                <br><br>
+                <input type="button" value="Click" onclick="abc()"><br><br>
+               Result : <span id="g1"></span>
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

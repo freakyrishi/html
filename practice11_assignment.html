@@ -1,0 +1,40 @@
+<!-- wap to accept length , breadth and height and then print volume. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function multi(){
+    let length;
+    let width;
+    let volume;
+    length=parseFloat(document.f1.length.value);
+    width=parseFloat(document.f1.width.value);
+    volume=parseFloat(document.f1.volume.value);
+    area=length*width*volume;
+    document.getElementById("result").innerHTML=area;
+}
+</script>
+<body>
+    <h1>AAA</h1>
+    <hr><hr>
+    <center>
+        <form name="f1">
+            <fieldset>
+                <legend>Float Addition </legend>
+                Length : <input type="text" name="length">
+                width : <input type="text" name="width">
+                Volume : <input type="text" name="volume"><br><br>
+                <input type="button" value="multi" onclick="multi()"><br><br>
+                Result : <span id="result"></span>
+            </fieldset>
+
+        </form>
+    </center>
+</body>
+</html>

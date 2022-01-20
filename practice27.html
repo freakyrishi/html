@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function abc(){
+    var uname,pass;
+    uname=document.f1.n1.value;
+    pass=document.f1.n2.value;
+    if(uname=="")
+    {
+        document.getElementById("r1").innerHTML="username cannot be blank"
+    }
+    else{
+        document.getElementById("r1").innerHTML="";
+    }
+    if(pass=="")
+    {
+        document.getElementById("r1").innerHTML="password cannot be blank"
+    }
+    else{
+        document.getElementById("r1").innerHTML="";
+    }
+}
+</script>
+<body>
+    <center>
+        <form name="f1" style="width: 50%;">
+        <fieldset>
+            <legend>Sign In</legend>
+            Username : <input type="text" name="n1"><span id="r1" style="color: red;"> *</span><br><br>
+            Password : <input type="password" name="n2"><span id="r2" style="color: red;"> *</span><br><br>
+            <input type="button" value="Submit" onclick="abc()"><br><br>
+            
+            Remark : <span id="g1"></span>
+        </fieldset>
+    </form>
+    </center>
+</body>
+</html>
